@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <section id="home" class="home"></section>
+  <header>
+    <div class="logo">
+      <img src="Images/logonew.jpg" alt="Logo" />
+      <div class="head">
+        <span>More Green (Pvt) Ltd</span>
+      </div>
+    </div>
+    <div class="links">
+      <a href="index.php">Home</a>
+    </div>
+  </header>
+  <div class="quote">
+    <h2>
+      "Welcome to a world where every login <br />
+      opens the door to sustainable<br />
+      opens the door to sustainable growth <br />
+      and flourishing partnerships.<br />
+      Let's grow together!"<br />
+    </h2>
+  </div>
+
+  <div class="wrapper active-popup" id="formcontain">
+    <div class="form-box login">
+      <h2>Login</h2>
+
+      <form action="./client.php" method="post">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required name="mail" />
+          <label>EmailID</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock"></ion-icon></span>
+          <input type="password" required name="pass" />
+          <label>Password</label>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="login-register">
+          <p>
+            Don't have an account?
+            <a href="#" class="register-link">Register</a>
+          </p>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="form-box register">
+      <h2>Register</h2>
+      <form action="register.php" method="post">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required name="txt" />
+          <label>UserName</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="call"></ion-icon></span>
+          <input type="tel" required name="Number" />
+          <label>Telephone No</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="home"></ion-icon></span>
+          <input type="text" required name="Add" />
+          <label>Address</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required name="mail" />
+          <label>EmailID</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock"></ion-icon></span>
+          <input type="password" required name="pass" />
+          <label>Password</label>
+        </div>
+
+        <button type="submit" class="btn" id="register">Register</button>
+        <div class="login-register">
+          <p>
+            Already have an account? <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

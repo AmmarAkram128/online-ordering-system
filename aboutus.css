@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+/* About Us */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    background-image: url(./Images/abt.jpg);
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay */
+.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+/* Text Content */
+.about h2,
+.about p {
+    position: relative;
+    z-index: 3;
+}
+
+.about-text,
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-text {
+    width: 600px;
+}
+
+.title p {
+    margin: 0 50px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.title,
+.des {
+    margin-bottom: 68px;
+}
+
+.des {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2rem;
+    width: 500px;
+}
+
+.order-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+.about-text,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+.about-text span,
+a span {
+    font-size: 32px;
+    color: #ffc901;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 50px 20px;
+    }
+
+    .title p {
+        font-size: 36px;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .des {
+        font-size: 16px;
+        width: 90%;
+        line-height: 1.5rem;
+    }
+
+    .order-now {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    .about-text,
+    a {
+        font-size: 28px;
+    }
+
+    .about-text span,
+    a span {
+        font-size: 28px;
+    }
+}
